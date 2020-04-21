@@ -65,8 +65,8 @@ while stop != "xxx":
     get_amount = num_check("Amount: ")
     amount.append(get_amount)
 
-total_cost_1 = amount * product
+total_cost = amount * cost
 
 
-for item in product, cost, amount, total_cost_1:
+for item in product, cost, amount:
     print(item)
