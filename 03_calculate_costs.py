@@ -59,14 +59,17 @@ while stop != "xxx":
     else:
         product.append(get_product)
 
+
     get_cost = num_check("Cost: $")
     cost.append(get_cost)
 
     get_amount = num_check("Amount: ")
     amount.append(get_amount)
 
-total_cost = amount * cost
+
+printout = "{} {}, ${}".format(amount, product, cost)
 
 
-for item in product, cost, amount:
-    print(item)
+print(printout)
+
+print("Total Cost: $".format(total_cost))
