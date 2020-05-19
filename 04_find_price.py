@@ -10,9 +10,7 @@ def not_blank(question, error_msg, ):
     valid = False
     while not valid:
         response = input(question)
-        # Removed by GK: has_errors = ""
-
-        # Removed by GK: if __name__ == '__main__':
+        
         # If response is blank, question is repeated (loop starts over)
         if response == "":
             print(error)
