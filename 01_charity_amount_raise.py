@@ -62,4 +62,6 @@ def get_goal():
         else:
             print("Please enter '%' or '$'")
 
+        return profit_var
+
 what_goal = get_goal()
