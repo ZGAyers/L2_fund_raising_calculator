@@ -42,7 +42,7 @@ def num_check(question):
 
 # set up empty list
 printout = []
-total_cost = []
+total_list = []
 
 
 # start of loop
@@ -64,15 +64,14 @@ while stop != "xxx":
     else:
         continue
 
-    total_cost.append(total)
+    total_list.append(total)
 
-
-
+total_cost = sum(total_list)
 
 print()
 print("Amount , Item, Cost")
 for item in printout:
     print(item)
 print()
-for item in total_cost:
-    print(item)
+print("Total Cost: ")
+print("${}".format(total_cost))
