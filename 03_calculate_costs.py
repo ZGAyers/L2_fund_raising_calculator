@@ -74,4 +74,4 @@ for item in printout:
     print(item)
 print()
 print("Total Cost: ")
-print("${}".format(total_cost))
+print("${:.2f}".format(total_cost))
