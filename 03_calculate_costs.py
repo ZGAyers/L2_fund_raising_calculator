@@ -42,8 +42,8 @@ def num_check(question):
 
 # set up empty list
 printout = []
-total_cost_one = []
-total_cost_all = []
+total_cost = []
+
 
 # start of loop
 stop = ""
@@ -59,13 +59,20 @@ while stop != "xxx":
     get_amount = num_check("Amount: ")
 
     printout.append("{:.0f} {}, ${:.2f} ".format(get_amount, get_product, get_cost))
-    total_cost_one.append(get_amount * get_cost)
-    total_cost_all.append(total_cost_one + total_cost_one)
+    if get_cost > 0:
+        total = get_cost * get_amount
+    else:
+        continue
+
+    total_cost.append(total)
+
+
+
 
 print()
 print("Amount , Item, Cost")
 for item in printout:
     print(item)
 print()
-for item in total_cost_all:
+for item in total_cost:
     print(item)
