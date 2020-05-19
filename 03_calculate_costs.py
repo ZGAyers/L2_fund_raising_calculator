@@ -40,10 +40,10 @@ def num_check(question):
 # main routine
 
 
-# set up empty lists
-product = []
-amount = []
-cost = []
+# set up empty list
+printout = []
+total_cost_one = []
+total_cost_all = []
 
 # start of loop
 stop = ""
@@ -51,25 +51,21 @@ while stop != "xxx":
     get_product = not_blank("Product: ",
                             "Please fill in this field or type 'xxx' to quit")
 
-    if get_product == "xxx" and len(product) > 1:
+    if get_product == "xxx":
         break
-    elif get_product == "xxx" and len(product) < 1:
-        print("Please type in a product")
-        continue
-    else:
-        product.append(get_product)
-
 
     get_cost = num_check("Cost: $")
-    cost.append(get_cost)
 
     get_amount = num_check("Amount: ")
-    amount.append(get_amount)
 
+    printout.append("{:.0f} {}, ${:.2f} ".format(get_amount, get_product, get_cost))
+    total_cost_one.append(get_amount * get_cost)
+    total_cost_all.append(total_cost_one + total_cost_one)
 
-printout = "{} {}, ${}".format(amount, product, cost)
-
-
-print(printout)
-
-print("Total Cost: $".format(total_cost))
+print()
+print("Amount , Item, Cost")
+for item in printout:
+    print(item)
+print()
+for item in total_cost_all:
+    print(item)
