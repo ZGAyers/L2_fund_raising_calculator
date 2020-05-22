@@ -59,28 +59,30 @@
       <file leaf-file-name="01_charity_amount_raise.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01_charity_amount_raise.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="505">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04_fixed_variable_costs.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04_fixed_variable_costs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/04_fixed_variable_costs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="-170">
+              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <folding>
+                <marker date="1590114656570" expanded="true" signature="1298:1361" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="05_find_price.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="05_find_price.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/05_find_price.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
-              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+            <state relative-caret-position="493">
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,16 +126,16 @@
         <option value="$PROJECT_DIR$/03_calculate_costs.py" />
         <option value="$PROJECT_DIR$/01_charity_amount_raise.py" />
         <option value="$PROJECT_DIR$/04_find_price.py" />
-        <option value="$PROJECT_DIR$/05_find_price.py" />
         <option value="$PROJECT_DIR$/04_fixed_variable_costs.py" />
+        <option value="$PROJECT_DIR$/05_find_price.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1038" />
-    <option name="y" value="139" />
-    <option name="width" value="903" />
-    <option name="height" value="750" />
+    <option name="x" value="463" />
+    <option name="y" value="108" />
+    <option name="width" value="978" />
+    <option name="height" value="882" />
   </component>
   <component name="ProjectId" id="1adhlS55wvnhiUUZtOGp2xnywd1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -196,7 +198,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Python.04_fixed_variable_costs">
+  <component name="RunManager" selected="Python.05_find_price">
     <configuration default="false" name="02_product_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,6 +246,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="03_fund_raising_calculator" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04_fixed_variable_costs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="05_find_price" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="03_fund_raising_calculator" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/05_find_price.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -382,15 +401,17 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.02_product_list" />
       <item index="1" class="java.lang.String" itemvalue="Python.03_calculate_costs" />
       <item index="2" class="java.lang.String" itemvalue="Python.04_fixed_variable_costs" />
+      <item index="3" class="java.lang.String" itemvalue="Python.05_find_price" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.04_fixed_variable_costs" />
-        <item index="1" class="java.lang.String" itemvalue="Python.03_calculate_costs" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.05_find_price" />
+        <item index="1" class="java.lang.String" itemvalue="Python.04_fixed_variable_costs" />
+        <item index="2" class="java.lang.String" itemvalue="Python.03_calculate_costs" />
       </list>
     </recent_temporary>
   </component>
@@ -411,15 +432,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1038" y="139" width="903" height="750" extended-state="0" />
-    <editor active="true" />
+    <frame x="463" y="108" width="978" height="882" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24915445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22972973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.21875" sideWeight="0.5039459" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8140625" sideWeight="0.4960541" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65932643" sideWeight="0.4960541" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -513,7 +534,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1590114656570" expanded="true" signature="1298:1361" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -612,14 +635,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04_find_price.py" />
-    <entry file="file://$PROJECT_DIR$/02_product_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../01_recipie_moderniser/05_scale_ingredients.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -631,14 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_charity_amount_raise.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -659,18 +666,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05_find_price.py">
+    <entry file="file://$PROJECT_DIR$/02_product_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+        <state relative-caret-position="153">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_charity_amount_raise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04_fixed_variable_costs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        <state relative-caret-position="-170">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <marker date="1590114656570" expanded="true" signature="1298:1361" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_find_price.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
           <folding />
         </state>
       </provider>

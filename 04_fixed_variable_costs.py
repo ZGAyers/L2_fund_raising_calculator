@@ -1,4 +1,4 @@
-# Component 05 - Find the selling price from information given by user
+# Component 04 - Give the user the option to enter both fixed and variable costs
 
 
 # Not Blank function goes here
@@ -37,41 +37,15 @@ def num_check(question):
 
             print(error)
 
-
-# get goal function
-def get_goal():
-    valid = False
-    while not valid:
-        profit_var = not_blank("Would you like to enter your profit goal by percentage or cost? ",
-                               "Please fill in this field").lower()
-
-        if profit_var == "$":
-            goal = num_check("What is your goal amount to raise for charity? $")
-            print("$", goal)
-            break
-
-        elif profit_var == "%":
-            goal = num_check("What percentage do you want to raise for charity? ")
-            print(goal, "%")
-            break
-
-        else:
-            print("Please enter '%' or '$'")
-
-        return profit_var
-
-
 # main routine
+
 
 # set up empty list
 printout = []
 total_list = []
-type_goal = ""
 
-# Get the users charity goal
-what_goal = get_goal()
 
-# start of loop - get item info
+# start of loop
 stop = ""
 while stop != "xxx":
     get_product = not_blank("Product: ",
@@ -102,7 +76,6 @@ while stop != "xxx":
 
 total_cost = sum(total_list)
 
-# print out list of information on items and the total cost
 print()
 print("Amount , Item, Cost")
 for item in printout:
