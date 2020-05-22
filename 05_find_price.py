@@ -1,4 +1,4 @@
-# Component 04 - Find the selling price from information given by user
+# Component 05 - Find the selling price from information given by user
 
 # Functions go here
 
