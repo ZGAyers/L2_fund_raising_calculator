@@ -42,26 +42,7 @@ def num_check(question):
             print(error)
 
 
-# get goal function
-def get_goal():
-    valid = False
-    while not valid:
-        profit_var = not_blank("Would you like to enter your profit goal by percentage or cost? ",
-                               "Please fill in this field").lower()
+# main routine
 
-        if profit_var == "$":
-            goal = num_check("What is your goal amount to raise for charity? $")
-            print("$", goal)
-            break
-
-        elif profit_var == "%":
-            goal = num_check("What percentage do you want to raise for charity? ")
-            print(goal, "%")
-            break
-
-        else:
-            print("Please enter '%' or '$'")
-
-        return profit_var
-
-what_goal = get_goal()
+goal = num_check("What goal amount do you want to raise? ")
+print("${} is your goal amount".format(goal))
