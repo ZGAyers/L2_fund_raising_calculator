@@ -38,27 +38,6 @@ def num_check(question):
             print(error)
 
 
-# get goal function
-
-        profit_var = not_blank("Would you like to enter your profit goal by percentage or cost? ",
-                               "Please fill in this field").lower()
-
-        if profit_var == "cost":
-            goal = num_check("What is your goal amount to raise for charity? $")
-            print("$", goal)
-            break
-
-        elif profit_var == "percentage":
-            goal = num_check("What percentage do you want to raise for charity? ")
-            print(goal, "%")
-            break
-
-        else:
-            print("Please enter 'percentage' or 'cost'")
-
-        return profit_var
-
-
 # main routine
 
 # set up empty list
@@ -80,7 +59,7 @@ while stop != "xxx":
     if get_product == "xxx":
         break
 
-    fixed = not_blank("Do you buy this product once? ",
+    fixed = not_blank("Do you only buy one of this product? ",
                       "Please enter <yes> or <no>").lower()
     if fixed == "yes":
         get_cost = num_check("Cost: $")
@@ -106,7 +85,6 @@ total_cost = sum(total_list)
 total_amount = sum(total_amount_list)
 
 suggest1 = total_cost + goal
-print(suggest1)
 suggest2 = suggest1 / total_amount
 
 
