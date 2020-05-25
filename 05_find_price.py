@@ -39,24 +39,22 @@ def num_check(question):
 
 
 # get goal function
-def get_goal():
-    valid = False
-    while not valid:
+
         profit_var = not_blank("Would you like to enter your profit goal by percentage or cost? ",
                                "Please fill in this field").lower()
 
-        if profit_var == "$":
+        if profit_var == "cost":
             goal = num_check("What is your goal amount to raise for charity? $")
             print("$", goal)
             break
 
-        elif profit_var == "%":
+        elif profit_var == "percentage":
             goal = num_check("What percentage do you want to raise for charity? ")
             print(goal, "%")
             break
 
         else:
-            print("Please enter '%' or '$'")
+            print("Please enter 'percentage' or 'cost'")
 
         return profit_var
 
@@ -66,10 +64,12 @@ def get_goal():
 # set up empty list
 printout = []
 total_list = []
-type_goal = ""
+total_amount_list = []
 
 # Get the users charity goal
-what_goal = get_goal()
+goal = num_check("What is your goal amount to raise for charity? $")
+print("$", goal)
+
 
 # start of loop - get item info
 stop = ""
@@ -100,7 +100,15 @@ while stop != "xxx":
 
     total_list.append(total)
 
+    total_amount_list.append(get_amount)
+
 total_cost = sum(total_list)
+total_amount = sum(total_amount_list)
+
+suggest1 = total_cost + goal
+print(suggest1)
+suggest2 = suggest1 / total_amount
+
 
 # print out list of information on items and the total cost
 print()
@@ -110,3 +118,4 @@ for item in printout:
 print()
 print("Total Cost: ")
 print("${:.2f}".format(total_cost))
+print("Suggested cost: ${:.2f} per item".format(suggest2))
