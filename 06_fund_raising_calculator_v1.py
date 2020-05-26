@@ -45,21 +45,40 @@ printout = []
 total_list = []
 total_amount_list = []
 
+# Bold print out text option
+bold = "\033[1m"
+reset = "\033[0;0m"
+
+# introduce user to program
+print(bold, "**Fund Raising Calculator**", reset)
+print("This program is used to enter products that you will buy for a fund raiser.")
+print("Then the program will print out the list of the products, the total cost and a suggested selling price")
+print()
+
 # Get the users charity goal
 goal = num_check("What is your goal amount to raise for charity? $")
-# print goal
-print("$", goal)
+print()
 
+# explain product loop
+print("Please enter the products you are purchasing for the fund raiser")
+print("--------------------------------------")
+print("Input '", bold, "exit", reset, "' to stop entering products")
+print("--------------------------------------")
 
 # start of loop - get item info
 stop = ""
-while stop != "xxx":
+while stop != "exit":
+    product = []
     get_product = not_blank("Product: ",
-                            "Please fill in this field or type 'xxx' to quit")
+                            "Please fill in this field or type 'exit' to quit")
+    product.append(get_product)
 
     # if user enters exit code break loop
-    if get_product == "xxx":
-        break
+    if get_product == "exit":
+        if len(product) != 0:
+            break
+        else:
+            print("Please enter at least one product")
 
     # ask user if they are only buying one of this product
     fixed = not_blank("Do you only buy one of this product? ",
@@ -101,10 +120,12 @@ suggest2 = suggest1 / total_amount
 
 # print out list of information on items and the total cost
 print()
-print("Amount , Item, Cost")
+print("----------------")
+print("Items:")
 for item in printout:
     print(item)
 print()
-print("Total Cost: ")
-print("${:.2f}".format(total_cost))
+print("Total Cost: ${:.2f}".format(total_cost))
+print("----------------")
 print("Suggested cost: ${:.2f} per item".format(suggest2))
+print("----------------")
