@@ -44,7 +44,7 @@ def num_check(question):
 printout = []
 total_list = []
 total_amount_list = []
-selling_items = []
+selling_items = ""
 
 # Bold print out text option
 bold = "\033[1m"
@@ -69,6 +69,7 @@ print("--------------------------------------")
 # start of loop - get item info
 stop = ""
 while stop != "exit":
+    print()
     product = []
     get_product = not_blank("Product: ",
                             "Please fill in this field or type 'exit' to quit")
@@ -95,6 +96,15 @@ while stop != "exit":
 
         get_amount = num_check("Amount: ")
 
+        # ask user if they are selling this item
+        selling = not_blank("Are you planning on selling this item? ",
+                            "Please input <yes> or <no>")
+
+        if selling == "yes":
+            selling_items = get_amount
+        else:
+            continue
+
     # append the information the user entered into a single line of code
     printout.append("{:.0f} {}, ${:.2f} ".format(get_amount, get_product, get_cost))
 
@@ -116,7 +126,7 @@ total_amount = sum(total_amount_list)
 
 # calculate a suggested price for the user
 suggest1 = total_cost + goal
-suggest2 = suggest1 / total_amount
+suggest2 = suggest1 / selling_items
 
 
 # print out list of information on items and the total cost
